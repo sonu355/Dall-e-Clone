@@ -18,7 +18,10 @@ const CreatePost = () => {
 
   }
   const handleChange = () => {
-    
+
+  }
+  const handleSupriseMe = () => {
+
   }
   return (
     <section>
@@ -39,11 +42,20 @@ const CreatePost = () => {
               placeholder = "John Doe"
               value = {form.name}
               handleChange = {handleChange}
+            />
+            <FormField 
+              LabelName = "Prompt"
+              type = "text"
+              name = "prompt"
+              placeholder = "an armchair in the shape of an avocado"
+              value = {form.prompt}
+              handleChange = {handleChange}
+              isSupriseMe
+              handleSupriseMe = {handleSupriseMe}
             /> 
           </div>
         </form>
     </section>
   )
 }
-
 export default CreatePost
