@@ -8,7 +8,7 @@ dotenv.config()
 
 const router = express.Router()
 router.route('/').get((req, res) => {
-    res.send('Hello Worl from postroutes')
+    res.send('Hello Worl from postro')
 })
 
 export default router;
